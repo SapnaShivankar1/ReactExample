@@ -1,20 +1,21 @@
 import './App.css';
-import { MastHeader } from '../../components/MastHeader/MastHeader';
-import { Header } from '../../components/Header/header';
-import { SectionContainer } from '../../components/SectionContainer/SectionContainer';
-import { Portfolio } from '../../components/Portfolio/portfolioCard';
-import { About } from '../../components/About/about';
-import { Contact } from '../../components/Contact/contact';
-import { Footer } from '../../components/Footer/footer';
-import {  basicData  ,protfolioData } from '../../assets/data/data';
-// import { MastHeader , Header, Portfolio, About, Contact, Footer } from '../../components';
-import cabinImg from '../../assets/img/portfolio/cabin.png';;
+
+import { MastHeader , Header, Portfolio, SectionContainer, About, Contact, Footer} from '../../components';
+
+import {protfolioData, basicData, shortDescripion} from '../../assets/data/data';
+
+
 function App() {
+
+
+
   return (
     <div className="App">
-      <MastHeader></MastHeader>
-      <Header></Header>
-      {/* <Portfolio imgSrc={cabinImg} imgAlt="..."></Portfolio> */}
+
+      <Header title={basicData.title}></Header>
+
+      <MastHeader title={basicData.title} subTitle={basicData.subTitle}></MastHeader>
+
       <SectionContainer title="Portfolio">
           {
             protfolioData.map((singlePortfolio, index) => {
@@ -22,13 +23,16 @@ function App() {
            
             })
           }
-        </SectionContainer>
+      </SectionContainer>
 
-      <About></About>
+      <About title="About" shortDescripion={shortDescripion}></About>
+
       <SectionContainer title="Contact Us">
         <Contact></Contact>
-        </SectionContainer>
-      <Footer></Footer>
+      </SectionContainer>
+
+      <Footer>
+      </Footer>
     </div>
   );
 }
