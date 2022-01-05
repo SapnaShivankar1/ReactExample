@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const SectionFooter = (props) => {
 const {heading, children} = props;
  return (

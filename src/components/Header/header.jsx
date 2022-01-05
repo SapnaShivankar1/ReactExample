@@ -1,3 +1,4 @@
+import React from 'react';
 import Avtaar from '../../assets/img/avataaars.svg'
 import { basicData } from '../../assets/data/data'
 export const Header = () => {

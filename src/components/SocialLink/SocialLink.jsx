@@ -1,4 +1,4 @@
-
+import React from 'react';
 export const SocialLink = (props) => {
 const {href, className} = props;
     return (

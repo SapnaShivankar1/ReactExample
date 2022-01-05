@@ -1,3 +1,4 @@
+import React from 'react';
 import { SectionFooter } from "../SectionFooter"
 import { SocialLink } from "../SocialLink"
 import { socialLinkData } from "../../assets/data/data"

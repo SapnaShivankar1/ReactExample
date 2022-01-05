@@ -1,5 +1,5 @@
 import './App.css';
-
+import React from 'react';
 import { MastHeader , Header, Portfolio, SectionContainer, About, Contact, Footer} from '../../components';
 
 import {protfolioData, basicData, shortDescripion} from '../../assets/data/data';
@@ -19,7 +19,7 @@ function App() {
       <SectionContainer title="Portfolio">
           {
             protfolioData.map((singlePortfolio, index) => {
-              return <Portfolio  key={`portfoliocard_${index}`}  imgSrc={singlePortfolio.imgSrc} imgAlt={singlePortfolio.imgAlt} />
+              return <Portfolio  key={`portfoliocard_${index}`}  imgSrc={singlePortfolio.imgSrc} imgAlt={singlePortfolio.imgAlt} slug={singlePortfolio.slug} />
            
             })
           }

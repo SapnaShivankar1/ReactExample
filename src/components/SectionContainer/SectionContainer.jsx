@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const SectionContainer = (props) => {
 
     const {title, children} = props;

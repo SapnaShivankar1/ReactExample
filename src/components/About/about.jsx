@@ -1,4 +1,4 @@
-
+import React from 'react';
 export const About = (props) => {
 
     const {title , shortDescripion} = props;
@@ -21,7 +21,7 @@ export const About = (props) => {
 
                 shortDescripion.map((single, i) => {
                     let index = i+1;
-                    let styleClassName = (index % 2 == 0) ? 'ms-auto' : 'me-auto';
+                    let styleClassName = (index % 2 === 0) ? 'ms-auto' : 'me-auto';
                     return (
                 <div className={`col-lg-4 ${styleClassName}`}><p className="lead">{single}
                 

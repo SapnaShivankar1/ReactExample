@@ -15,32 +15,39 @@ export const basicData =  {
 export const protfolioData = [
     {
         imgSrc : cabinImg,
-        imgAlt : '...'
+        imgAlt : '...',
+        slug : "cabin"
     },
 
     {
         imgSrc : cakeImg,
-        imgAlt : '...'
+        imgAlt : '...',
+        slug : "cake"
+        
     },
 
     {
         imgSrc : circusImg,
-        imgAlt : '...'
+        imgAlt : '...',
+        slug : "circus"
     },
 
     {
         imgSrc : gameImg,
-        imgAlt : '...'
+        imgAlt : '...',
+        slug : "game"
     },
 
     {
         imgSrc : safeImg,
-        imgAlt : '...'
+        imgAlt : '...',
+        slug : "safe"
     },
 
     {
         imgSrc : submarineImg,
-        imgAlt : '...'
+        imgAlt : '...',
+        slug : "submarine"
     }
 
 ]

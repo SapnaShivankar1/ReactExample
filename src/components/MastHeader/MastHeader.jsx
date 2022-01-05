@@ -1,3 +1,4 @@
+import React from 'react';
 import { basicData } from '../../assets/data/data'
 export const MastHeader = () => {
     return (

@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/css/style.css';
-import App from './containers/App/App';
+import { AppRoutes } from './routes';
 import reportWebVitals from './reportWebVitals';
-import First from './First';
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
+  <BrowserRouter>
   <React.StrictMode>
-    {/* <First></First> */}
-    <App />
-  </React.StrictMode>,
+    <AppRoutes />
+  </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
